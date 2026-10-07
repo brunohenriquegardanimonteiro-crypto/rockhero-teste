@@ -1,0 +1,12 @@
+﻿Rock Hero (PowerShell) - Pacote para rodar em outros PCs
+Instrucoes:
+1. Copie esta pasta para o computador destino (ex.: Desktop\RockHeroPS)
+2. Abra PowerShell 5.1 (recomendado) na pasta
+3. Execute: .\launch.ps1  (ou direto .\rockhero.ps1)
+4. Coloque suas musicas em: %LOCALAPPDATA%\RockHeroPS\music\  (WAV recomendado)
+5. O jogo analisa automaticamente e gera as notas
+
+Notas:
+- rockhero.ps1 eh o jogo completo (auto-contido). launch.ps1 eh um launcher opcional.
+- Arquivos .cs e .ps1 fontes estao incluidos para referencia.
+- Os samples em 'songs\' sao exemplos (iron_man.wav, sweet_child.wav).

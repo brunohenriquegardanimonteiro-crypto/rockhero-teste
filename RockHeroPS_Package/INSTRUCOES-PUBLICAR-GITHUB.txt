@@ -1,0 +1,20 @@
+﻿REPOSITÓRIO ROCKHERO PREPARADO
+
+Arquivo: rh-repo-preparado.zip (na Área de Trabalho/RockHeroPS_Package)
+Conteúdo:
+- rockhero.ps1, RockEngine.cs, build.ps1, p0*.ps1 (já incluídos no repo base? no repo base temos build.ps1, RockEngine.cs, rockhero.ps1)
+- README.md, LICENSE (MIT), CHANGELOG.md, .gitignore, AGENTS.md
+- .github/workflows/selftest.yml
+- bootstrap.ps1 (one-liner idempotente, estilo envctl)
+
+Passos para publicar:
+1. Descompacte rh-repo-preparado.zip
+2. Abra repositório no GitHub (Create repo rockhero, público)
+3. git init; git add .; git commit -m 'feat: initial import'
+4. git branch -M main; git remote add origin https://github.com/<SEU_USUARIO>/rockhero.git
+5. git push -u origin main
+
+Bootstrap one-liner (após publicado):
+irm https://raw.githubusercontent.com/<SEU_USUARIO>/rockhero/main/bootstrap.ps1 | iex
+ATUALIZADO: rh-repo-preparado.zip contém TODOS os arquivos (rockhero.ps1 + RockEngine.cs + p01-p08.ps1 + build.ps1 + README.md + LICENSE + CHANGELOG.md + .gitignore + AGENTS.md + bootstrap.ps1 + .github/workflows/selftest.yml)
+Tamanho: ~121KB

@@ -1,0 +1,7 @@
+﻿Abra PowerShell NA PASTA onde tem rockhero.ps1 e cole:
+
+powershell -NoProfile -ExecutionPolicy Bypass -File .\rockhero.ps1
+
+OU, se estiver em outra pasta, use caminho completo:
+
+powershell -NoProfile -ExecutionPolicy Bypass -File "C:\CAMINHO_COMPLETO\RockHeroPS_Package\rockhero.ps1"

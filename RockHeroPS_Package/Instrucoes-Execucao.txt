@@ -1,0 +1,18 @@
+﻿## Executar Rock Hero de QUALQUER pasta
+
+### Opção 1 - CMD (.cmd/.bat)
+Execute RockHero.cmd ou RockHero.bat que está nesta pasta. 
+Funciona mesmo se você abrir o CMD em outra pasta (ele usa %~dp0).
+
+### Opção 2 - PowerShell (.ps1)
+Execute Run-RockHero.ps1 ou RockHero-Portable.ps1 nesta pasta. 
+Também funciona a partir de qualquer diretório (usa $PSScriptRoot/$MyInvocation).
+
+### Opção 3 - Comando direto no PowerShell (sem depender do nome do arquivo na chamada)
+Abra PowerShell em qualquer pasta e execute:
+powershell -NoProfile -ExecutionPolicy Bypass -File "C:\CAMINHO\COMPLETO\RockHeroPS_Package\rockhero.ps1"
+
+Substitua o caminho completo. Para obter caminho: arraste ockhero.ps1 para o terminal.
+
+### Opção 4 - Atalho portátil
+Copie toda a pasta e use RockHero.cmd para iniciar (recomendado para outros PCs).

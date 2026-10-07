@@ -1,0 +1,10 @@
+﻿COMANDO ONE-LINER CORRETO
+
+Após publicar o repositório (rockhero) no seu GitHub:
+
+irm https://raw.githubusercontent.com/SEU_USUARIO/rockhero/main/bootstrap.ps1 | iex
+
+Com SelfTest:
+irm https://raw.githubusercontent.com/SEU_USUARIO/rockhero/main/bootstrap.ps1 | iex -SelfTest -NoAudio
+
+SUBSTITUA SEU_USUARIO pelo seu username do GitHub.

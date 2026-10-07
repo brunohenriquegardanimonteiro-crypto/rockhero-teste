@@ -1,0 +1,15 @@
+﻿COMO EXECUTAR O ROCK HERO DE QUALQUER PASTA
+
+Método 1 - CMD (mais fácil, funciona sempre)
+- Execute: RUN_FROM_ANY_FOLDER.cmd  (ou RockHero.cmd / Start_RockHero.cmd)
+- Funciona mesmo se você abrir o Prompt de Comando em outra pasta.
+
+Método 2 - PowerShell
+- Execute: RUN_FROM_ANY_FOLDER.ps1  (ou Launch-Anywhere.ps1)
+- Também funciona de qualquer pasta (detecta onde está automaticamente).
+
+Método 3 - Caminho completo (garantido)
+powershell -NoProfile -ExecutionPolicy Bypass -File "C:\CAMINHO_COMPLETO\RockHeroPS_Package\rockhero.ps1"
+
+OBS: No PowerShell 5.1, para chamar um .ps1 na pasta atual, use: .\NOME.ps1
+Mas se você estiver em OUTRA pasta, use um dos métodos acima (eles usam %~dp0 ou ).

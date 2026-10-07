@@ -1,0 +1,25 @@
+﻿### Como importar músicas próprias da internet para o Rock Hero
+
+Passos:
+
+1. Baixe a música (formato recomendado: **WAV**)
+   - WAV: melhor para análise (onsets), sem perda. Funciona perfeitamente.
+   - MP3/WMA/M4A/AAC: funcionam se os codecs do Windows via MCI estiverem instalados. Resultados podem variar.
+   - OGG: ainda não validado/testado nesse projeto.
+
+2. Coloque o arquivo na pasta correta
+   - `%LOCALAPPDATA%\RockHeroPS\music\`
+   - No Windows: abra `Win+R`, cole `%LOCALAPPDATA%\RockHeroPS\music\` e Enter. Cole o arquivo .wav lá.
+
+3. O jogo detecta automaticamente
+   - Abra o Rock Hero (rockhero.ps1)
+   - No Song Select aparecerá na lista: `my music` + nome do arquivo
+   - Na primeira vez que jogar, ele analisa o áudio (gera onsets/cache). Vai aparecer com BPM e número de notas estimadas.
+
+4. Dicas
+   - Nomes simples, sem espaços complicados (evita problemas). Ex.: `track.wav`
+   - Arquivos muito curtos (< ~0.5s) não são considerados "ready".
+   - O cache é salvo em `%LOCALAPPDATA%\RockHeroPS\charts\` como `.onsets` (para acelerar próximas execuções).
+
+5. Fontes seguras
+   - Use músicas que você tem direito de usar (seu próprio conteúdo, licença CC0, etc.). Não use charts/músicas comerciais com restrições.
